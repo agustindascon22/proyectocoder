@@ -1,0 +1,91 @@
+$color-background: aquamarine;
+$color-border: blue;
+$color-titulo: black;
+$color-border2: white;
+
+#menu{
+	background-image:linear-gradient(to left, $color-titulo,$color-border);
+	width: 100%;
+	height: 40px;
+    border: outset 1px $color-border2;
+    ul{
+        list-style: none;
+        li{
+            width: 80px;
+            height: 30px;
+            display:inline-block;
+            border: solid 1px $color-border2;
+            border-radius: 7px;
+            box-shadow: 2px 2px 2px;
+            background: $color-titulo;
+            text-decoration-style: none;
+            text-align: center;
+    }
+    
+    }
+        
+    }
+
+.titulo{
+	font-family: verdana;
+	font-style: italic;
+	color: $color-titulo;
+}
+p{
+	font-family: 'Bebas Neue';
+}
+#lista{
+	list-style: none;
+	display: flex;
+	flex-flow: wrap;
+    justify-content: space-around;
+    :hover{
+        background-color: $color-background;
+    }
+}
+.imagen{
+	border: double 2px $color-border2;
+}
+.contenedor{
+	background-image:linear-gradient(to left, $color-titulo, $color-border);
+	width: 100%;
+	padding: 5px;
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-around;
+    ul{
+        list-style: none;
+        li{
+            display: inline-block;
+        }
+    }
+}
+
+
+.grilla{
+    background-color: $color-titulo;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    justify-content: space-around;
+}
+article{
+    background-color: $color-background;
+	border: solid 4px $color-border;
+	border-radius: 2px;
+}
+aside{
+    background-color: $color-background;
+	border: solid 4px $color-border;
+	border-radius: 8px;
+}
+.logo:hover{
+	transform: rotate(45deg);
+}
+@media screen and (max-width: 640px) {
+ #menu{
+    flex-direction: column;
+    width: 100%;
+  }
+  
+}
+

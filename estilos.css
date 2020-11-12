@@ -1,0 +1,116 @@
+#menu {
+  background-image: -webkit-gradient(linear, right top, left top, from(black), to(blue));
+  background-image: linear-gradient(to left, black, blue);
+  width: 100%;
+  height: 40px;
+  border: outset 1px white;
+}
+
+#menu ul {
+  list-style: none;
+}
+
+#menu ul li {
+  width: 80px;
+  height: 30px;
+  display: inline-block;
+  border: solid 1px white;
+  border-radius: 7px;
+  -webkit-box-shadow: 2px 2px 2px;
+          box-shadow: 2px 2px 2px;
+  background: black;
+  -webkit-text-decoration-style: none;
+          text-decoration-style: none;
+  text-align: center;
+}
+
+.titulo {
+  font-family: verdana;
+  font-style: italic;
+  color: black;
+}
+
+p {
+  font-family: 'Bebas Neue';
+}
+
+#lista {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#lista :hover {
+  background-color: aquamarine;
+}
+
+.imagen {
+  border: double 2px white;
+}
+
+.contenedor {
+  background-image: -webkit-gradient(linear, right top, left top, from(black), to(blue));
+  background-image: linear-gradient(to left, black, blue);
+  width: 100%;
+  padding: 5px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contenedor ul {
+  list-style: none;
+}
+
+.contenedor ul li {
+  display: inline-block;
+}
+
+.grilla {
+  background-color: black;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px 300px 300px;
+      grid-template-columns: 300px 300px 300px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+article {
+  background-color: aquamarine;
+  border: solid 4px blue;
+  border-radius: 2px;
+}
+
+aside {
+  background-color: aquamarine;
+  border: solid 4px blue;
+  border-radius: 8px;
+}
+
+.logo:hover {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+@media screen and (max-width: 640px) {
+  #menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
